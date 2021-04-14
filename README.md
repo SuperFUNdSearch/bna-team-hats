@@ -1,4 +1,8 @@
 # bna-team-hats
+## Stand Up Schedule
+  Monday - 12:30pm PST prior to class, primary goal is to optimize work during class time
+  Wednesday - 12:30pm PST prior to class, primary goal is to optimize work during class time
+  Thursday - 12:30pm PST, primary goal is to clarify end of week/ weekend objectives and leave time Friday to bloack out periods for pair coding or group consults
 
 ## SMART GOALS
 
