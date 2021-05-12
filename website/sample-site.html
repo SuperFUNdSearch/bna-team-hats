@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'/>
+    <title>Homepage</title>
+    <link rel='stylesheet' href='styles.css'/>
+  </head>
+  <body>
+    <div class='header-container'>
+      <div class='header'>
+        <div class='project-title'>Superfund Search</div>
+        <div class='about'>
+          <a class='home-about' href='home-info.html'>Back to home</a>
+        </div>
+      </div>
+    </div>
+    <div class='general-block'>
+      <div class='heading-big'>{{ site_json[name] }}</div>
+      <div class='timeline'>
+        <div class='line'></div>
+        <div class='dot m1'>
+          <div class='milestone'>Initial Assessment Completed</div>
+          <div class='date d1'>09/19/1982</div>
+          <!-- {{ site_json[milestone_container][Initial Assessment Completed][date] }} -->
+        </div>
+        <div class='dot m2'>
+          <div class='milestone'>Proposed to the National Priorities List</div>
+        </div>
+        <div class='dot m3'>
+          <div class='milestone'>Finalized on the National Priorities List</div>
+        </div>
+        <div class='dot m4'>
+          <div class='milestone'>Remedial Investigation Started</div>
+        </div>
+        <div class='dot m5'>
+          <div class='milestone'>Final Remedy Selected</div>
+        </div>
+        <div class='dot m6'>
+          <div class='milestone'>Final Remedial Action Started</div>
+        </div>
+        <div class='dot m7'>
+          <div class='milestone'>Construction Completed</div>
+        </div>
+        <div class='dot m8'>
+          <div class='milestone'>Deleted from National Priorities List</div>
+        </div>
+        <div class='dot m9'>
+          <div class='milestone'>Site Ready for Reuse and Redevelopment</div>
+        </div>
+      </div>
+      <div class='normal-font'>Latest update: {{ site_json[local_stats][latest_update] }}</div>
+    </div>
+    <div class='general-block'>
+      <div class='paragraph-big'>
+        <div class='heading-small'>The {{ site_json[name] }} site reached the latest stage: {{ site_json[milestone_container][-1] }} faster than site_json[local_stats][percent_comparison]% of all other sites in the country. It has been {{ site_json[local_stats][days_since] }} days since its latest update. The pollution score of {{ site_json[name] }} is in the {{ site_json[local_stats][national_percentile] }}th percentile of the nation and its rate of progress is {{ site_json[local_stats][state_rating] }}th best in {{ site_json[name] }}.</div>
+      </div>
+    </div>
+    <div class='general-block'>
+      <div class='chart-container'>
+        <div class='chart'>
+          <div class='chart-img'><img src='images/holder-chart.png' alt='Chart #1' width=300px"></div>
+          <div class='chart-caption'>State comparison</div>
+        </div>
+        <div class='chart'>
+          <div class='chart-img'><img src='images/holder-chart.png' alt='Chart #1' width=300px"></div>
+          <div class='chart-caption'>National comparison</div>
+        </div>
+      </div>
+    </div>
+    <div class='footer-container'>
+      <div class='authors'>website made by Anna Greene, Cade Caneddy, and Katherine Moldow</div>
+    </div>
+  </body>
+</html>
